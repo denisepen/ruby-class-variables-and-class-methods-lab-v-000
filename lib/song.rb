@@ -26,10 +26,11 @@ def self.artists
   @@artists.uniq
 end
 
-  def self.genre_count(genre, name)
-    inject(@@genres.new(0)) { |h, x| h[x] += 1; h}
+  def self.genre_count
+    counts = Hash.new 0
+    @@genres.each do |word|
+      counts[word] += 1
+    end
+    counts
   	  end
   end
-
-
-end
