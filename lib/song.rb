@@ -34,3 +34,12 @@ end
     counts
   	  end
   end
+
+  def self.song_count
+    counts = Hash.new 0
+    @@genres.each do |word|
+      counts[word] += 1
+    end
+    counts
+      end
+  end
