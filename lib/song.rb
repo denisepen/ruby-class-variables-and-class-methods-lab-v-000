@@ -33,7 +33,7 @@ end
     end
     counts
   	  end
-  end
+
 
   def self.song_count
     counts = Hash.new 0
